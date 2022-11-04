@@ -32,6 +32,8 @@ export default function About({ authors, siteconfig }) {
                   layout="fill"
                   objectFit="cover"
                   sizes="(max-width: 320px) 100vw, 320px"
+                  width={width}
+                  height={height}
                 />
               </div>
             );

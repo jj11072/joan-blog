@@ -28,14 +28,14 @@ export default function Navbar(props) {
       href: "/archive"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
+      label: "Shop",
+      href: "https://guru-guideshop.vercel.app/",
       external: true,
       badge: "new"
     },
     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      label: "Donate",
+      href: "/donate",
       external: true
     }
   ];
