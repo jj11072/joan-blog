@@ -1,11 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+
 import { NextSeo } from "next-seo";
-import Layout from "@components/layout";
 import Container from "@components/container";
-// import Subpagehero from "@components/sections/subpagehero";
-// import Categories from "@components/categories";
+
 import { useRouter } from "next/router";
 import { getClient, usePreviewSubscription } from "@lib/sanity";
 import defaultOG from "../public/img/opengraph.jpg";
@@ -35,7 +31,7 @@ export default function Post(props) {
   return (
     <>
       {posts && siteConfig && (
-        <Layout {...siteConfig}>
+        <>
           <NextSeo
             title={`Blog — ${siteConfig?.title}`}
             description={siteConfig?.description || ""}
@@ -77,7 +73,7 @@ export default function Post(props) {
               ))}
             </div>
           </Container>
-        </Layout>
+        </>
       )}
     </>
   );

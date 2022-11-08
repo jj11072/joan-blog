@@ -30,7 +30,7 @@ export default function Post(props) {
   return (
     <>
       {posts && siteConfig && (
-        <Layout {...siteConfig}>
+        <>
           <NextSeo
             title={`${siteConfig?.title}`}
             description={siteConfig?.description || ""}
@@ -74,13 +74,13 @@ export default function Post(props) {
               ))}
             </div>
           </Container>
-        </Layout>
+        </>
       )}
     </>
   );
 }
 
-export async function getStaticProps({ params, preview = false }) {
+export async function getStaticProps({ preview = false }) {
   const post = await getClient(preview).fetch(postquery);
   const config = await getClient(preview).fetch(configQuery);
 

@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "Stablo Template",
+    "name": "Joans Blog",
     "basePath": "/studio"
   },
   "api": {
-    "projectId": "",
+    "projectId": "o8ppzcum",
     "dataset": "production"
   },
   "plugins": [

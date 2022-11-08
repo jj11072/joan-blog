@@ -1,14 +1,14 @@
 import Container from "@components/container";
-import Layout from "@components/layout";
 import { authorsquery, configQuery } from "@lib/groq";
 import { getClient } from "@lib/sanity";
 import GetImage from "@utils/getImage";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function About({ authors, siteconfig }) {
+
+export default function About({ authors }) {
   return (
-    <Layout {...siteconfig}>
+    <>
       <Container>
         <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
           About
@@ -32,8 +32,7 @@ export default function About({ authors, siteconfig }) {
                   layout="fill"
                   objectFit="cover"
                   sizes="(max-width: 320px) 100vw, 320px"
-                  width={width}
-                  height={height}
+                  
                 />
               </div>
             );
@@ -58,7 +57,7 @@ export default function About({ authors, siteconfig }) {
           </p>
         </div>
       </Container>
-    </Layout>
+    </>
   );
 }
 

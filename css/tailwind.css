@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Custom Styles Here*/
+
+@layer components {
+	.overlay {
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+}
