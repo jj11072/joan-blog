@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps, siteConfig }) {
     };
   }, []);
 
+ 
   return (
     <ThemeProvider attribute="class">
       <Layout {...siteConfig}>

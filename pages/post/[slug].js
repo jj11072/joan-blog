@@ -54,7 +54,7 @@ export default function Post(props) {
   return (
     <>
       {post && siteConfig && (
-        <Layout {...siteConfig}>
+        <>
           <NextSeo
             title={`${post.title} - ${siteConfig.title}`}
             description={post.excerpt || ""}
@@ -77,7 +77,7 @@ export default function Post(props) {
               cardType: "summary_large_image"
             }}
           />
-          {/*
+         
           <div className="relative bg-white/20">
             <div className="absolute w-full h-full -z-10">
               {post?.mainImage && (
@@ -94,7 +94,7 @@ export default function Post(props) {
                 {post.title}
               </h1>
             </Container>
-          </div> */}
+          </div> 
 
           <Container className="!pt-0">
             <div className="max-w-screen-md mx-auto ">
@@ -180,7 +180,7 @@ export default function Post(props) {
               {post.author && <AuthorCard author={post.author} />}
             </article>
           </Container>
-        </Layout>
+        </>
       )}
     </>
   );

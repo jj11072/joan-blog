@@ -2,9 +2,9 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import Container from "@components/container";
 import Link from "next/link";
-import Image from "next/image";
-import GetImage from "@utils/getImage";
-import { myLoader } from "@utils/all";
+// import Image from "next/image";
+// import GetImage from "@utils/getImage";
+// import { myLoader } from "@utils/all";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -144,10 +144,12 @@ export default function Navbar(props) {
                   {mobilemenu.map((item, index) => (
                     <Link href={item.href} key={index}>
                       <a
-                        className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-pink-300 dark:hover:text-pink-300"
+                        className="my-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-pink-300 dark:hover:text-pink-300"
                         target={item.external ? "_blank" : ""}
                         rel={item.external ? "noopener" : ""}>
-                        {item.label}
+                        <Disclosure.Button className="px-2  w-full">
+                          {item.label}
+                        </Disclosure.Button>
                       </a>
                     </Link>
                   ))}

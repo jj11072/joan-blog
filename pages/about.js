@@ -41,9 +41,7 @@ export default function About({ authors }) {
 
         <div className="mx-auto prose text-center dark:prose-invert mt-14">
           <p>
-            We provide real-time connectivity to enable software
-            providers and financial institutions to build integrated
-            products for their small business customers.
+            I provide information about spiriituality and well-being  
           </p>
           <p>
             Our API infrastructure is leveraged by clients ranging
